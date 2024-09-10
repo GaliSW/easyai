@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "data": {
+        "label": "專案名稱",
+        "type": "project",
+        "level": 1
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "label": "原始資料",
+        "type": "original_data",
+        "level": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "label": "原始資料",
+        "type": "original_data",
+        "level": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "label": "資料視覺化",
+        "type": "visualization",
+        "level": 3,
+        "parentIndex": 0
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "label": "選擇模型",
+        "type": "model_selection",
+        "level": 3,
+        "parentIndex": 0
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "label": "模型結果",
+        "type": "model_result",
+        "level": 4,
+        "parentIndex": 0
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "label": "資料視覺化",
+        "type": "visualization",
+        "level": 3,
+        "parentIndex": 1
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "label": "選擇模型",
+        "type": "model_selection",
+        "level": 3,
+        "parentIndex": 1
+      }
+    },
+    {
+      "id": "9",
+      "data": {
+        "label": "模型結果",
+        "type": "model_result",
+        "level": 4,
+        "parentIndex": 1
+      }
+    }
+  ],
+  "edges": [
+    {"id": "e1-2", "source": "1", "target": "2"},
+    {"id": "e1-3", "source": "1", "target": "3"},
+    {"id": "e2-4", "source": "2", "target": "4"},
+    {"id": "e2-5", "source": "2", "target": "5"},
+    {"id": "e5-6", "source": "5", "target": "6"},
+    {"id": "e3-7", "source": "3", "target": "7"},
+    {"id": "e3-8", "source": "3", "target": "8"},
+    {"id": "e8-9", "source": "8", "target": "9"}
+  ]
+}
